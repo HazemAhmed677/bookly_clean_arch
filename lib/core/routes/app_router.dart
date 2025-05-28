@@ -1,11 +1,14 @@
 // ignore: depend_on_referenced_packages
 import 'package:bookly_clean_arch/core/routes/routes.dart';
-// ignore: depend_on_referenced_packages
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../features/home/presentation/views/book_details_view.dart';
+import '../../features/home/presentation/views/home_view.dart';
+import '../../features/search/views/search_view.dart';
+import '../../features/splash/presentation/views/splash_view.dart';
+import '../widgets/customm_transition_page.dart';
+
 abstract class AppRouter {
-  static const String kBookDetails = '/bookDetails';
   static final GoRouter router = GoRouter(
     routes: [
       GoRoute(
