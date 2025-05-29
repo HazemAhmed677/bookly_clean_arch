@@ -16,7 +16,7 @@ class HomeRemoteDataSourceImpl extends HomeRemoteDataSource {
   Future<List<BookEntity>> fetchFeaturedBooks() async {
     var data = await apiService.get(endpoint: ApiEndpoints.featuredBooks);
     List<BookEntity> books = [];
-    for (var ele in data['data']) {
+    for (var ele in data['items']) {
       books.add(ele);
     }
     // cacheBooks(books: books, boxName: CachingConstants.kFeaturedBooksBox);
