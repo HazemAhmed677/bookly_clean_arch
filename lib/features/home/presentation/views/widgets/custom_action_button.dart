@@ -41,7 +41,7 @@ class CustomActionButton extends StatelessWidget {
                     style: Styles.textStyleForPrice.copyWith(
                       fontWeight: FontWeight.bold,
                       color: textColor,
-                      fontFamily: Constants.kGiloryMedium,
+                      fontFamily: StyleConstants.giloryMedium,
                       fontSize: 20,
                     ),
                   )
@@ -49,7 +49,7 @@ class CustomActionButton extends StatelessWidget {
                     text,
                     style: Styles.textStyle16.copyWith(
                       fontWeight: FontWeight.bold,
-                      fontFamily: Constants.kGiloryMedium,
+                      fontFamily: StyleConstants.giloryMedium,
                       color: textColor,
                     ),
                   ),

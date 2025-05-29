@@ -24,7 +24,7 @@ class BookDetailsSection extends StatelessWidget {
             'Hazem',
             textAlign: TextAlign.center,
             style: TextStyle(
-              fontFamily: Constants.kGtSectraFine,
+              fontFamily: StyleConstants.gtSectraFine,
               fontSize: 30,
               fontWeight: FontWeight.bold,
             ),

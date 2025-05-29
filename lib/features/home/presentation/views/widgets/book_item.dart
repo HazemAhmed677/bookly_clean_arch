@@ -13,7 +13,7 @@ class BookItem extends StatelessWidget {
           (flag != null)
               ? BorderRadius.circular(12)
               : BorderRadius.circular(20),
-      child: Image.asset(AssetsData.testImage),
+      child: Image.asset(AssetsData.testImage, fit: BoxFit.cover),
       // child: CachedNetworkImage(
       //   imageUrl: imageURL,
       //   fit: BoxFit.fill,

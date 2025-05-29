@@ -15,7 +15,7 @@ abstract class Styles {
   static final textStyle18 = TextStyle(
     fontSize: 18,
     fontWeight: FontWeight.w600,
-    fontFamily: Constants.kGiloryMedium,
+    fontFamily: StyleConstants.giloryMedium,
   );
 
   static const textStyle20 = TextStyle(

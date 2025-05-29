@@ -23,7 +23,7 @@ class _SuggestionBooksSectionState extends State<SuggestionBooksSection> {
             'You can also like',
             style: Styles.textStyle14.copyWith(
               fontWeight: FontWeight.bold,
-              fontFamily: Constants.kMotserraRegular,
+              fontFamily: StyleConstants.motserraRegular,
             ),
           ),
         ),

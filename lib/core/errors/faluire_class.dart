@@ -22,7 +22,7 @@ class ServerFaluire {
         return ServerFaluire('Bad certificate, Please try later');
       case DioExceptionType.badResponse:
         return ServerFaluire.fromBadResponse(
-          statusCode: statusCode,
+          statusCode: statusCode!,
           response: response,
         );
       case DioExceptionType.cancel:
@@ -33,7 +33,10 @@ class ServerFaluire {
         return ServerFaluire('Oops, there something wrong!');
     }
   }
-  factory ServerFaluire.fromBadResponse({int? statusCode, dynamic response}) {
+  factory ServerFaluire.fromBadResponse({
+    required int statusCode,
+    required Map<String, dynamic> response,
+  }) {
     if (statusCode == 400 || statusCode == 401 || statusCode == 403) {
       return ServerFaluire(response['error']['message']);
     } else if (statusCode == 404) {

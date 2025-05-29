@@ -54,7 +54,7 @@ class NewestItem extends StatelessWidget {
                     'Free',
                     style: Styles.textStyleForPrice.copyWith(
                       fontWeight: FontWeight.bold,
-                      fontFamily: Constants.kMotserraRegular,
+                      fontFamily: StyleConstants.motserraRegular,
                     ),
                   ),
                   const Spacer(flex: 1),
